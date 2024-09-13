@@ -3,7 +3,7 @@ import PropTypes from "prop-types";
 import { Editor } from "@tinymce/tinymce-react";
 import { Controller } from "react-hook-form";
 
-const apiKey = "lpef6wrfp2licl5delv972pcj03jw0coardthvenf15dxf3z";
+const apiKey = import.meta.env.VITE_TINYMCE_API_KEY;
 
 export default function RTE({ name, control, label, defaultValue = "" }) {
   return (
